@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "image": {
+    "output": "model-service/smoke-output/chair.glb",
+    "provider": "TripoSR",
+    "vertices": 10224,
+    "faces": 20448,
+    "bytes": 410068,
+    "seconds": 10.09,
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpuPeakMemoryBytes": 1957210624,
+    "resolution": 128
+  },
+  "audio": {
+    "output": "model-service/smoke-output/jfk-transcript.json",
+    "provider": "Whisper",
+    "model": "base",
+    "language": "en",
+    "text": "And so my fellow Americans ask not what your country can do for you, ask what you can do for your country.",
+    "durationSeconds": 11.0,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.6000000000000005,
+        "text": "And so my fellow Americans ask not what your country can do for you,"
+      },
+      {
+        "start": 7.6000000000000005,
+        "end": 10.6,
+        "text": "ask what you can do for your country."
+      }
+    ],
+    "seconds": 2.78,
+    "device": "cuda"
+  },
+  "checks": [
+    "Actual CUDA TripoSR reconstruction",
+    "Re-imported finite GLB with more than 100 faces",
+    "FFmpeg FLAC to WAV decoding",
+    "Actual Whisper transcription recovered expected speech"
+  ],
+  "sources": {
+    "image": "https://github.com/VAST-AI-Research/TripoSR/blob/main/examples/chair.png",
+    "audio": "https://github.com/openai/whisper/blob/main/tests/jfk.flac"
+  }
+}

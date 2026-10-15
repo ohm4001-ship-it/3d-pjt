@@ -1,0 +1,14 @@
+{
+  "evidence": "Actual local U2Net background removal and CUDA TripoSR inference from opaque JPEG; worker exited 0.",
+  "fixture": "Official TripoSR chair example converted to opaque JPEG",
+  "output": "model-service/smoke-output/chair-photo-verified.glb",
+  "provider": "TripoSR",
+  "vertices": 9766,
+  "faces": 19532,
+  "bytes": 391744,
+  "seconds": 36.64,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "gpuPeakMemoryBytes": 1957210624,
+  "resolution": 128,
+  "limits": "Single official object fixture verifies JPEG preprocessing and reconstruction; no Korean speech or manufacturing-quality claim."
+}

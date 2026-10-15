@@ -1,0 +1,22 @@
+{
+  "name": "formworks",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Multimodal modular display design, quotation and approval workspace",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:ui": "vite --host 127.0.0.1 --port 4325 --strictPort",
+    "start": "node server/index.mjs",
+    "build": "vite build",
+    "test": "node --test tests/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "smoke:browser": "node scripts/browser-smoke.mjs",
+    "models:check": "node scripts/check-models.mjs",
+    "smoke:models": "node scripts/model-api-smoke.mjs",
+    "check": "npm run test && npm run build && npm run smoke && npm run smoke:browser"
+  },
+  "dependencies": { "three": "0.180.0" },
+  "devDependencies": { "vite": "7.1.7", "@playwright/test": "1.55.1" }
+}

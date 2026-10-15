@@ -1,0 +1,36 @@
+{
+  "executedAt": "2026-10-14T02:34:55.530Z",
+  "evidence": "Live local HTTP uploads, actual GPU/CPU model subprocesses on official input fixtures and validated outputs. No simulated inference responses or placeholder models.",
+  "limits": "One official object and English speech verify integration; Korean speech accuracy and actual shelf reconstruction quality remain unmeasured.",
+  "results": [
+    {
+      "name": "HTTP image upload → real TripoSR worker → downloadable GLB",
+      "status": "passed",
+      "seconds": 16.39,
+      "bytes": 410068,
+      "provider": "TripoSR",
+      "fixture": "official chair.png"
+    },
+    {
+      "name": "HTTP audio upload → real Whisper worker → speech transcript",
+      "status": "passed",
+      "seconds": 7.25,
+      "characters": 106,
+      "language": "en",
+      "provider": "Whisper",
+      "fixture": "official JFK speech converted to WAV"
+    },
+    {
+      "name": "completed image and speech jobs bind to immutable quote sources",
+      "status": "passed",
+      "seconds": 0.08
+    },
+    {
+      "name": "browser restores generated reference GLB and locked sources",
+      "status": "passed",
+      "seconds": 5.69,
+      "pageErrors": [],
+      "generatedReference": true
+    }
+  ]
+}

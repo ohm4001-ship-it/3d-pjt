@@ -1,0 +1,39 @@
+{
+  "executedAt": "2026-10-14T02:29:29.707Z",
+  "evidence": "Real Chromium against built UI and live isolated SQLite API. Audio race scenario uses controlled delayed responses and does not assert model inference.",
+  "results": [
+    {
+      "name": "live WebGL model and authoritative initial quote",
+      "status": "passed"
+    },
+    {
+      "name": "Korean request drives dimensions, model and quotation",
+      "status": "passed"
+    },
+    {
+      "name": "image reference, confirmation and durable quote save",
+      "status": "passed"
+    },
+    {
+      "name": "saved revisions and approval/order lock",
+      "status": "passed"
+    },
+    {
+      "name": "GLB and CSV downloads contain real data",
+      "status": "passed"
+    },
+    {
+      "name": "new quote resets sources and pending image response cannot leak",
+      "status": "passed"
+    },
+    {
+      "name": "delayed audio job cannot write into a different quote (response fixture)",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout and keyboard model controls",
+      "status": "passed"
+    }
+  ],
+  "pageErrors": []
+}

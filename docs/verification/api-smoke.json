@@ -1,0 +1,42 @@
+{
+  "executedAt": "2026-10-14T02:24:29.776Z",
+  "evidence": "Live local HTTP requests against isolated SQLite database; external models intentionally unavailable in this error-path test.",
+  "results": [
+    {
+      "name": "health and built application",
+      "status": "passed"
+    },
+    {
+      "name": "Korean text updates only requested fields",
+      "status": "passed"
+    },
+    {
+      "name": "server validates dimensions and computes BOM/pricing",
+      "status": "passed"
+    },
+    {
+      "name": "confirmation is required and quote persists",
+      "status": "passed"
+    },
+    {
+      "name": "optimistic concurrency and revision history",
+      "status": "passed"
+    },
+    {
+      "name": "approval lifecycle locks approved specifications",
+      "status": "passed"
+    },
+    {
+      "name": "quote exports and formula injection protection",
+      "status": "passed"
+    },
+    {
+      "name": "invalid uploads and unavailable models fail truthfully",
+      "status": "passed"
+    },
+    {
+      "name": "unknown routes and traversal do not expose local files",
+      "status": "passed"
+    }
+  ]
+}

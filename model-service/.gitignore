@@ -1,0 +1,7 @@
+.venv/
+.cache/
+.tmp/
+vendor/
+__pycache__/
+*.partial
+smoke-output/

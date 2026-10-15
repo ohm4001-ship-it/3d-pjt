@@ -1,0 +1,16 @@
+# Install the CUDA PyTorch wheel separately; see docs/MODEL_SETUP.md.
+# NumPy 1.x keeps upstream's 2024 dependencies compatible.
+numpy==1.26.4
+omegaconf==2.3.0
+Pillow==10.4.0
+einops==0.7.0
+transformers==4.45.2
+tokenizers==0.20.3
+huggingface-hub==0.26.2
+trimesh==4.0.5
+rembg==2.0.61
+onnxruntime==1.20.1
+imageio==2.36.1
+imageio-ffmpeg==0.5.1
+scikit-image==0.24.0
+openai-whisper==20250625
